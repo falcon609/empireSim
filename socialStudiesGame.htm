@@ -3,12 +3,13 @@
 
 <head>
 <script>
-    var rspns1 = document.getElementById("rspns1");
-    var rspns2 = document.getElementById("rspns2");
-    var content = document.getElementById("content");
+    var rspns1 = "document.getElementById('rspns1')";
+    var rspns2 = "document.getElementById('rspns2')";
+    var content = "document.getElementById('content')";
     
     function startSequence() {
-        content.innerHTML = "Villagers have reported a hostile group of warriors across the river from your village. You can fight them yourself, or you can band together with the neighboring village a couple of miles downriver, though you don't know them that well. What would you like to do?";
+        content.innerHTML = "Citizens of your small settlement have reported a hostile group of warriors across the river " + 
+                            "from your village. You can fight them yourself, or you can band together with the neighboring village a couple of miles downriver, though you don't know them that well. What would you like to do?";
         rspns1.innerHTML = "Fight alone";
         rspns2.innerHTML = "Band together";
         rspns1.onclick = "";
