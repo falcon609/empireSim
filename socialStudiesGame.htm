@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<script>
+    var rspns1 = document.getElementById("rspns1");
+    var rspns2 = document.getElementById("rspns2");
+    var content = document.getElementById("content");
+    
+    function startSequence() {
+        content.innerHTML = "Villagers have reported a hostile group of warriors across the river from your village. You can fight them yourself, or you can band together with the neighboring village a couple of miles downriver, though you don't know them that well. What would you like to do?";
+        rspns1.innerHTML = "Fight alone";
+        rspns2.innerHTML = "Band together";
+        rspns1.onclick = "";
+        rspns2.onclick = top();
+    };
+    
+    function top(){
+        content.innerHTML = "Works";
+    }
+</script>
+<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+<style>
+    h1 {font-family: 'Raleway', sans-serif;}
+    p {font-family: 'Raleway', sans-serif;}
+</style>
+</head>
+
+<body>
+    <h1 id = "title">EMPIRE SIM v. 0.1</h1>
+    <p id = "content">Welcome to Empire Sim! You are the leader of your own growing empire, and your nation will come to you with questions. Advise them, and the decisions you make will determine the fate of your empire. The goal of the game is to make your empire last as many decisions as possible, as all empires will end eventually. Respond by clicking the response buttons at the bottom of the screen. Do not click next until you have chosen an answer. Click start when you are ready to begin. Good luck!</p>
+    <p id = "rspns1"></p>
+    <p id = "rspns2" onclick = "startSequence();">|START|</p>
+    
+</body>
+
+
+</html>
